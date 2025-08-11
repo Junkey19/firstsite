@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Page Title</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="css.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body>
+
+<div class="header1">
+  <div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 3</div>
+  <img src="img1.jpg" style="width:100%">
+  <div class="text">1</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 3</div>
+  <img src="img2.jpg" style="width:100%">
+  <div class="text">2</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 3</div>
+  <img src="img3.jpg" style="width:100%">
+  <div class="text">3</div>
+</div>
+
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+</div>
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+ <style>
+      body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0; /* Fundal stilizat */
+            padding: 20px; /* Spațiere între conținut și margini */
+        }
+
+        #content {
+            max-width: 1400px; /* Limitarea lățimii conținutului */
+  min-height: 400px;/* Limitarea lățimii conținutului */
+            margin: 5px auto; /* Marginile de 5px și centrat pe orizontală */
+            background-color: #fff; /* Fundalul conținutului */
+            padding: 20px; /* Spațierea între conținut și margini */
+            border-radius: 10px; /* Rotunjirea marginilor */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Umbra cutiei */
+            overflow: hidden; /* Pentru a evita ca imaginea să iasă în afara containerului */
+            position: relative; /* Pozitionare relativa pentru a permite pozitionarea imaginii mici pe imaginiea marita */
+        }
+
+        #content img {
+            float: right; /* Poziționarea imaginii la dreapta */
+            margin-left: 20px; /* Spațierea între imagine și text */
+            border-radius: 10px; /* Rotunjirea marginilor imaginii */
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.2); /* Umbra imaginii */
+            transition: transform 0.3s; /* Efect de tranziție pentru mărirea imaginii */
+            max-width: 100%; /* Limitare la lățimea conținutului */
+        }
+
+     #content img:hover {
+    transform: scale(1.1); /* Mărirea imaginii la 1.1x dimensiunea originală la hover */
+    position: relative; /* Schimbarea poziționării la relativă pentru a menține fluxul normal al elementelor */
+    z-index: 2; /* Asigură afișarea imaginii marite peste conținutul restant */
+}
+
+
+    </style>
+</div>
+
+<div class="navbar">
+  <a href="index.html" >ACASĂ</a>
+ <a href="c0.html" class="right">CONFIGURARE INIȚIALĂ ȘI SETĂRI DE BAZĂ</a>
+ <a href="c1.html" class="right">ACTUALIZĂRI ȘI SERVICE-URI</a>
+ <a href="c2.html" class="right">PERSONALIZARE ȘI UTILIZARE  </a>
+<a href="c3.html" class="right">GESTIONAREA DISPOZITIVELOR ȘI DRIVERELOR </a>
+
+</div>
+
+<div id="content">
+  <h3>Windows este un sistem de operare dezvoltat de Microsoft, care domină piața calculatoarelor personale încă de la debutul său în anii '80. Acest sistem de operare a evoluat de-a lungul anilor, trecând prin numeroase versiuni, iar versiunea prezentată este Windows 10.</h3>
+
+  <div class="gallery">
+    <div class="gallery-item">
+      <img src="img/1.jpg" alt="Figura 1" width="100%">
+     
+    </div>
+    <div class="gallery-item">
+      <img src="img/2.jpg" alt="Figura 2" width="100%">
+    </div>
+    <div class="gallery-item">
+      <img src="img/3.jpg" alt="Figura 3" width="100%">
+    </div>
+  </div>
+
+  <ol>
+    <li><strong>Interfața Utilizatorului Prietenoasă:</strong> Una dintre caracteristicile definitorii ale sistemului de operare Windows este interfața sa grafică intuitivă. Utilizatorii pot naviga ușor prin meniuri, ferestre și alte elemente grafice pentru a accesa și gestiona diferite funcții.</li>
+    <li><strong>Versatilitate și Adaptabilitate:</strong> Windows 10 este cunoscut pentru versatilitatea sa, putând fi utilizat pe o varietate de dispozitive, inclusiv calculatoare personale, laptopuri, tablete și chiar telefoane mobile. De asemenea, este adaptabil la nevoile diferite ale utilizatorilor, oferind o gamă largă de funcționalități și opțiuni de personalizare.</li>
+    <li><strong>Securitate Avansată:</strong> Windows 10 aduce îmbunătățiri semnificative în ceea ce privește securitatea, inclusiv funcții precum Windows Defender pentru protecție împotriva virusilor și amenințărilor cibernetice, actualizări de securitate regulate și opțiuni de control al confidențialității pentru utilizatori.</li>
+    <li><strong>Integrare și Compatibilitate:</strong> Windows 10 este integrat cu numeroase servicii Microsoft, cum ar fi OneDrive pentru stocarea în cloud, Skype pentru comunicare și Microsoft Office pentru productivitate. De asemenea, este compatibil cu o gamă largă de aplicații și software de la terțe părți.</li>
+    <li><strong>Asistență Cortana și Funcționalități AI:</strong> Windows 10 include asistentul virtual Cortana, care oferă funcționalități de căutare, gestionare a calendarului, setarea de mementouri și alte sarcini, folosind tehnologii de inteligență artificială pentru a îmbunătăți experiența utilizatorului.</li>
+    <li><strong>Actualizări Regulate și Suport pe Termen Lung:</strong> Microsoft oferă actualizări regulate de securitate și funcționalitate pentru Windows 10, asigurându-se că sistemul rămâne actualizat și sigur. De asemenea, oferă suport extins pe termen lung pentru versiunile principale ale Windows 10, ceea ce înseamnă că utilizatorii beneficiază de actualizări și suport pentru o perioadă extinsă de timp.</li>
+  </ol>
+</div>
+
+
+ <div class="footer">
+  
+ <div class="ft ft1">
+     
+      <p class="inf"><span class="bold">TEL/FAX: +40369420518</p>
+      <p class="inf"><span class="bold">Adresa:</span> Bulevardul General Vasile Milea 3-5, SIBIU</p>
+<p class="inf"><span class="bold">Email:</span> smcis@mapn.ro</p>
+     
+   </div>
+   
+
+<div class="ft ft3">
+    <p class="footertitle">Rețele sociale</p>
+    <ul class="footericons">
+        <li class="footericon">
+            <a target="_blank" href="https://www.facebook.com/windows/">
+                <div class="icon1"></div>
+            </a>
+        </li>
+        <li class="footericon">
+            <a target="_blank" href="https://www.office.com/">
+                <div class="icon2"></div>
+            </a>
+        </li>
+    </ul>
+</div>
+
+</body>
+</html>

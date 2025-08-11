@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Page Title</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="css.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</style>
+</head>
+<body>
+
+<div class="header1">
+  <div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 3</div>
+  <img src="img1.jpg" style="width:100%">
+  <div class="text">1</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 3</div>
+  <img src="img2.jpg" style="width:100%">
+  <div class="text">2</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 3</div>
+  <img src="img3.jpg" style="width:100%">
+  <div class="text">3</div>
+</div>
+
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+</div>
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+
+ <style>
+      body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0; /* Fundal stilizat */
+            padding: 20px; /* Spațiere între conținut și margini */
+        }
+
+        #content {
+            max-width: 1400px; /* Limitarea lățimii conținutului */
+  min-height: 400px;/* Limitarea lățimii conținutului */
+            margin: 5px auto; /* Marginile de 5px și centrat pe orizontală */
+            background-color: #fff; /* Fundalul conținutului */
+            padding: 20px; /* Spațierea între conținut și margini */
+            border-radius: 10px; /* Rotunjirea marginilor */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Umbra cutiei */
+            overflow: hidden; /* Pentru a evita ca imaginea să iasă în afara containerului */
+            position: relative; /* Pozitionare relativa pentru a permite pozitionarea imaginii mici pe imaginiea marita */
+        }
+
+        #content img {
+            float: right; /* Poziționarea imaginii la dreapta */
+            margin-left: 20px; /* Spațierea între imagine și text */
+            border-radius: 10px; /* Rotunjirea marginilor imaginii */
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.2); /* Umbra imaginii */
+            transition: transform 0.3s; /* Efect de tranziție pentru mărirea imaginii */
+            max-width: 100%; /* Limitare la lățimea conținutului */
+        }
+
+     #content img:hover {
+    transform: scale(1.1); /* Mărirea imaginii la 1.1x dimensiunea originală la hover */
+    position: relative; /* Schimbarea poziționării la relativă pentru a menține fluxul normal al elementelor */
+    z-index: 2; /* Asigură afișarea imaginii marite peste conținutul restant */
+}
+
+
+    </style>
+</div>
+
+<div class="navbar">
+  <a href="index.html" >ACASĂ</a>
+ <a href="c0.html" class="right">CONFIGURARE INIȚIALĂ ȘI SETĂRI DE BAZĂ</a>
+ <a href="c1.html" class="right">ACTUALIZĂRI ȘI SERVICE-URI</a>
+ <a href="c2.html" class="right">PERSONALIZARE ȘI UTILIZARE  </a>
+<a href="c3.html" class="right">GESTIONAREA DISPOZITIVELOR ȘI DRIVERELOR </a>
+
+</div>
+
+
+
+
+
+<div id="content">
+        <h3>Personalizare Windows 10  </h3>
+ <h4>Rezoluția ecranului:  </h4>
+       <img src="img1/14.jpg" alt="Figura 5" width="35%">
+  
+    <p>1. Din Setări, navigăm la "Sistem" și selectăm "Afișare".</p>
+    <p>2. Sub secțiunea "Rezoluție ecran", vom găsi opțiuni pentru a selecta rezoluția dorită din lista disponibilă. Putem ajusta și orientarea ecranului (orizontal sau vertical).</p>
+</div>
+
+<div id="content">
+ <h4>Teme și culori:  </h4>
+       <img src="img1/15.jpg" alt="Figura 5" width="35%">
+    <p>1. În aceeași fereastră "Afișare" din Setări, căutăm "Teme".</p>
+    <p>2. Aici, putem alege dintr-o varietate de teme predefinite sau putem personaliza propriile teme.</p>
+    <p>3. Pentru a personaliza o temă, putem face click pe "Setări temă" și să alegem culorile și fundalurile preferate.</p>
+    <p>4. De asemenea, putem personaliza culorile pentru diferite elemente ale interfeței, precum ferestrele și bara de activități, făcând click pe "Culori".</p>
+</div>
+
+<div id="content"> 
+<h4>Personalizarea meniului Start: </h4>
+       <img src="img1/16.jpg" alt="Figura 5" width="30%">
+    <p>1. Când facem click dreapta pe butonul "Start" din colțul din stânga jos al ecranului nostru, putem selecta "Personalizare".</p>
+    <p>2. În fereastra "Personalizare", ne îndreptăm către secțiunea "Start".</p>
+    <p>3. Aici, avem posibilitatea să alegem între un aspect simplificat sau extins al meniului Start, în funcție de modul nostru preferat de organizare.</p>
+    <p>4. Putem adăuga sau elimina plăci pentru aplicații, site-uri web sau alte elemente importante în grila meniului Start.</p>
+    <p>5. Tot aici putem redimensiona meniul Start și să-l poziționăm în locul care ne convine cel mai bine.</p>
+</div>
+
+<div id="content">
+<h4>Personalizarea barei de activități: </h4>
+       <img src="img1/17.jpg" alt="Figura 5" width="30%">
+    <p>1. Facem click dreapta pe o zonă liberă a barei de activități (partea de jos a ecranului) </p>
+    <p>2. Selectăm "Setări Bara de activități".</p>
+    <p>3. Aici, putem decide dacă vrem să vedem sau să ascundem elemente precum butoanele de notificare sau butoanele de acțiune rapidă.</p>
+    <p>4. De asemenea, avem libertatea să grupăm și să ordonăm elementele în bara de activități.</p>
+    <p>5. Alegerea unei culori pentru bara de activități și meniul Start.</p>
+</div>
+
+<div id="content">
+<h4>Configurarea și utilizarea virtual desktops (multiple desktops) </h4>
+       <img src="img1/19.jpg" alt="Figura 5" width="37%">
+    <p>1. Pentru a începe, acceăm funcția "Task View" apăsând pe butonul din bara de activități sau folosind combinația de taste "Windows + Tab".</p>
+    <p>2. În "Task View", apăsăm pe opțiunea "Adăugați un desktop" pentru crearea unui desktop virtual nou.</p>
+    <p>3. Odată create desktopurile virtuale, putem naviga între ele folosind din nou funcția "Task View".</p>
+    <p>4. Pentru a muta aplicații între desktopuri, putem să glisăm aplicația dorită din "Task View" pe desktopul virtual corespunzător.</p>
+    <p>5. De asemenea, putem face click dreapta pe o aplicație în "Task View" și să alegem "Mutați la" pentru a decide unde să plasăm acea aplicație.</p>
+    <p>6. Când nu mai avem nevoie de un desktop virtual, putem să-l închidem făcând click pe butonul "X" situat în colțul din dreapta sus al desktopului virtual din "Task View".</p>
+<img src="img1/18.jpg" alt="Figura 5" width="40%">
+    <p>7. Pentru a accesa mai multe opțiuni și configurări legate de desktopurile virtuale, accesăm "Setări" > "Sistem" > "Multitasking". Aici putem configura diverse opțiuni, cum ar fi modul în care se comportă aplicațiile atunci când mutăm de la un desktop la altul sau putem activa un comutator rapid între desktopuri folosind combinația de taste "Ctrl + Windows + Frecventa de actualizare".</p>
+</div>
+
+
+
+
+
+<div class="footer">
+  
+ <div class="ft ft1">
+     
+      <p class="inf"><span class="bold">TEL/FAX: +40369420518</p>
+      <p class="inf"><span class="bold">Adresa:</span> Bulevardul General Vasile Milea 3-5, SIBIU</p>
+<p class="inf"><span class="bold">Email:</span> smcis@mapn.ro</p>
+     
+   </div>
+   
+
+<div class="ft ft3">
+    <p class="footertitle">Rețele sociale</p>
+    <ul class="footericons">
+        <li class="footericon">
+            <a target="_blank" href="https://www.facebook.com/windows/">
+                <div class="icon1"></div>
+            </a>
+        </li>
+        <li class="footericon">
+            <a target="_blank" href="https://www.office.com/">
+                <div class="icon2"></div>
+            </a>
+        </li>
+    </ul>
+</div>
+
+</body>
+</html>

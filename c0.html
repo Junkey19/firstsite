@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Page Title</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="css.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</style>
+</head>
+<body>
+
+<div class="header1">
+  <div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 3</div>
+  <img src="img1.jpg" style="width:100%">
+  <div class="text">1</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 3</div>
+  <img src="img2.jpg" style="width:100%">
+  <div class="text">2</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 3</div>
+  <img src="img3.jpg" style="width:100%">
+  <div class="text">3</div>
+</div>
+
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+</div>
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+
+ <style>
+      body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0; /* Fundal stilizat */
+            padding: 20px; /* Spațiere între conținut și margini */
+        }
+
+        #content {
+            max-width: 1400px; /* Limitarea lățimii conținutului */
+  min-height: 400px;/* Limitarea lățimii conținutului */
+            margin: 5px auto; /* Marginile de 5px și centrat pe orizontală */
+            background-color: #fff; /* Fundalul conținutului */
+            padding: 20px; /* Spațierea între conținut și margini */
+            border-radius: 10px; /* Rotunjirea marginilor */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Umbra cutiei */
+            overflow: hidden; /* Pentru a evita ca imaginea să iasă în afara containerului */
+            position: relative; /* Pozitionare relativa pentru a permite pozitionarea imaginii mici pe imaginiea marita */
+        }
+
+        #content img {
+            float: right; /* Poziționarea imaginii la dreapta */
+            margin-left: 20px; /* Spațierea între imagine și text */
+            border-radius: 10px; /* Rotunjirea marginilor imaginii */
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.2); /* Umbra imaginii */
+            transition: transform 0.3s; /* Efect de tranziție pentru mărirea imaginii */
+            max-width: 100%; /* Limitare la lățimea conținutului */
+        }
+
+     #content img:hover {
+    transform: scale(1.1); /* Mărirea imaginii la 1.0x dimensiunea originală la hover */
+    position: relative; /* Schimbarea poziționării la relativă pentru a menține fluxul normal al elementelor */
+    z-index: 2; /* Asigură afișarea imaginii marite peste conținutul restant */
+}
+        }   
+
+
+    </style>
+</div>
+
+<div class="navbar">
+  <a href="index.html" >ACASĂ</a>
+ <a href="c0.html" class="right">CONFIGURARE INIȚIALĂ ȘI SETĂRI DE BAZĂ</a>
+ <a href="c1.html" class="right">ACTUALIZĂRI ȘI SERVICE-URI</a>
+ <a href="c2.html" class="right">PERSONALIZARE ȘI UTILIZARE  </a>
+<a href="c3.html" class="right">GESTIONAREA DISPOZITIVELOR ȘI DRIVERELOR </a>
+
+</div>
+
+
+
+<div id="content">
+        <h3>Setarea Limbii în Windows 10</h3>
+       <img src="img1/1.jpg" alt="Figura 1: Adăugare limbă pentru Windows 10" width="40%">
+     
+        <p>1. Accesați Setări: Faceți click pe butonul Start sau apăsați combinația de taste Windows + I pentru a deschide Setări în mod direct.</p>
+        <p>2. Navigați la "Timp și limbă": Dând click pe opțiunea "Timp și limbă", veți deschide un set de sub-opțiuni pentru ajustarea fusului orar, datei și limbii sistemului.</p>
+        <p>3. Selectați Limba și Regiunea: În fereastra Setări, faceți click pe "Limbă" pentru a alege limba preferată și pentru a vă asigura că sistemul de operare este configurat corect.</p>
+        <p>4. Alegeți Limba Preferată: În secțiunea "Timp și limbă", faceți click pe "Adăugare o limbă" dacă limba dorită nu este deja listată, apoi selectați limba din lista disponibilă.</p>
+     
+ </div>
+
+
+<div id="content"> 
+<h3>După ce am instalat limba dorită în Windows 10, putem să o setăm ca limbă principală sau secundară pentru sistemul de operare. Pașii pe care trebuie să-i urmăm:</h3>
+    <img src="img1/2.jpg" alt="Figura 2: Imagine 2" width="60%">
+ <p>1.Setarea limbii de afișare a sistemului: În Setări > Timp și limbă > Limbă, avem secțiunea "Preferințe de limbă", unde vom vedea lista limbilor instalate. Facem click pe limba pe care dorim să o facem limbă de afișare principală.</p>
+  <p>2.Apoi, faceți click pe butonul "Setare ca limbă de afișare principală". Acest lucru va face ca toate meniurile, ferestrele de dialog și alte elemente de interfață grafică să fie afișate în limba selectată.</p>
+<h3>Dacă dorim să schimbăm și limba tastaturii, din secțiunea  " Timp și limbă " și apoi pe "Tastatură", adăugăm o limbă nou instalată sau se poate  modifica limba tastaturii existentă.:</h3>
+</div>
+
+
+<div id="content">
+        <h3>Setarea regiunii. </h3>
+       <img src="img1/4.png" alt="Figura 3" width="40%">
+     
+        <p>1. În aceeași secțiune, facem click pe "Regiune" pentru a seta regiunea. Din meniul derulat, selectăm țara sau regiunea corespunzătoare preferinței noastre. </p>
+       
+ </div>
+
+<div id="content">
+        <h3>Configurarea timpului. </h3>
+       <img src="img1/5.jpg" alt="Figura 5" width="50%">
+     
+        <p>1. În secțiunea "Data și timp", facem click pe "Alegeți ora manual". </p>
+ <p>2. Selectăm fusul orar din listă sau activăm opțiunea "Folosiți ora automat" pentru a permite Windows să detecteze automat fusul orar bazat pe locație </p>
+       
+ </div>
+
+
+<div id="content">
+        <h3>Configurarea și crearea unui cont nou </h3>
+       <img src="img1/7.jpg" alt="Figura 5" width="60%">
+     
+        <ol>
+    <li>Accesăm Setări și navigăm la secțiunea Conturi.</li>
+    <li>În fereastra Setări, facem click pe opțiunea "Conturi" pentru a accesa setările de cont.</li>
+    <li>Adăugăm un utilizator.</li>
+    <li>În partea stângă a ferestrei Conturi, selectăm opțiunea "Familie și alte persoane".</li>
+    <li>În secțiunea "Alte persoane", facem click pe "Adăugați altă persoană la acest PC" pentru a crea un cont nou.</li>
+    <li>Creăm un cont nou.</li>
+    <li>Ni se va solicita să introducem adresa de e-mail a noii persoane sau să creăm un cont local fără a fi necesară o adresă de e-mail. Selectăm opțiunea corespunzătoare și urmăm instrucțiunile afișate pe ecran pentru a finaliza procesul de creare a noului cont.</li>
+    <li>Setăm parola și întrebările de securitate.</li>
+    <li>În timpul creării contului, putem seta o parolă pentru acesta și o confirmăm. Dacă este necesar, putem seta și întrebările de securitate pentru a ajuta la recuperarea parolei în caz că o uităm.</li>
+<img src="img1/8.jpg" alt="Figura 5" width="40%">
+    <li>Ultimul pas implică atribuirea privilegiilor de cont.</li>
+    <li>După ce contul a fost creat și parola a fost setată, putem atribui privilegii de cont, cum ar fi administrator sau utilizator standard.</li>
+    <li>Revenim la meniul "Familie și alte persoane", facem click pe contul creat și selectăm opțiunea "Schimbare tip de cont". Alegem tipul de cont dorit și confirmăm modificările.</li>
+</ol>
+
+ </div>
+
+<div id="content">
+        <h3>Setările de rețea  </h3>
+       <img src="img1/10.jpg" alt="Figura 5" width="30%">
+    <ol>
+    <li>Când vorbim despre setările de rețea, ne referim la instrumentele și opțiunile disponibile pentru gestionarea conexiunilor la internet prin cablu sau Wi-Fi.</li>
+    <li>Atunci când accesăm Setările de rețea, exista posibilitatea să configurării modului în care dispozitivul se conectează la internet.</li>
+    <li>Aici, putem alege între conexiunea prin cablu sau cea Wi-Fi, în funcție de disponibilitatea și preferințele mele.</li>
+    <li>Dacă avem acces la o rețea prin cablu, putem selecta această opțiune pentru a conecta dispozitivul la internet.</li>
+    <li>În schimb, dacă avem mai multe rețele Wi-Fi disponibile în zonă, setările de rețea ne permit să navighăm printre aceste rețele și să ne conectăm la cea pe care o preferăm.</li>
+    <li>Odată ce suntem conectați, putem să gestionăm și să configurăm diverse aspecte ale rețelei, cum ar fi schimbarea parolei de acces, setarea rețelei ca fiind privată sau publică, sau chiar să configurăm diverse setări de securitate pentru a proteja conexiunea la internet.</li>
+</ol>
+
+</div>
+<div id="content">
+        <h3>Setarea și partajarea fișierelor și a imprimantelor în rețea </h3>
+ <h4>Pentru partajarea fișierelor, urmăm pașii:</h4>
+       <img src="img1/11.jpg" alt="Figura 5" width="50%">
+   <ol>
+    <li>Navigăm către fișierul sau dosarul pe care dorim să-l partajăm.</li>
+    <li>Facem click dreapta pe fișierul sau dosarul respectiv și selectăm "Proprietăți".</li>
+    <li>În fereastra "Proprietăți", mergem la fila "Partajare".</li>
+    <li>Aici, putem alege să partajăm fișierul sau dosarul și să configurăm permisiunile de acces.</li>
+    <li>De asemenea, putem utiliza opțiunea "Partajare cu" din meniul contextual al fișierelor pentru a partaja rapid cu alte persoane sau grupuri de utilizatori.</li>
+</ol>
+
+<h4>Pentru partajarea imprimantelor, urmăm pașii:</h4>
+<img src="img1/12.jpg" alt="Figura 5" width="50%">
+<ol>
+    <li>În Setări, navigăm la "Dispozitive".</li>
+    <li>Selectăm "Imprimante și scanere".</li>
+    <li>Aici, vedem lista de imprimante disponibile și selectăm imprimanta pe care dorim să o partajăm.</li>
+    <li>Facem click pe "Gestionați" și apoi selectăm "Proprietăți Imprimantă".</li>
+    <li>În fereastra "Proprietăți Imprimantă", mergem la fila "Partajare".</li>
+    <li>Aici, avem opțiuni pentru a partaja imprimanta și pentru a configura permisiunile de acces.</li>
+</ol>
+<p>Este important să avem drepturi de administrator pentru a efectua modificări în setările de partajare. Uneori, este necesar să activăm funcționalitatea de partajare din alte secțiuni, cum ar fi "Setări de Rețea și Internet" sau "Centru de Rețea și Partajare", pentru a accesa aceste opțiuni.</p>
+
+       
+ </div>
+
+
+
+
+<div class="footer">
+  
+ <div class="ft ft1">
+     
+      <p class="inf"><span class="bold">TEL/FAX: +40369420518</p>
+      <p class="inf"><span class="bold">Adresa:</span> Bulevardul General Vasile Milea 3-5, SIBIU</p>
+<p class="inf"><span class="bold">Email:</span> smcis@mapn.ro</p>
+     
+   </div>
+   
+
+<div class="ft ft3">
+    <p class="footertitle">Rețele sociale</p>
+    <ul class="footericons">
+        <li class="footericon">
+            <a target="_blank" href="https://www.facebook.com/windows/">
+                <div class="icon1"></div>
+            </a>
+        </li>
+        <li class="footericon">
+            <a target="_blank" href="https://www.office.com/">
+                <div class="icon2"></div>
+            </a>
+        </li>
+    </ul>
+</div>
+
+</body>
+</html>

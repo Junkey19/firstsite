@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Page Title</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="css.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</style>
+</head>
+<body>
+
+<div class="header1">
+  <div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 3</div>
+  <img src="img1.jpg" style="width:100%">
+  <div class="text">1</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 3</div>
+  <img src="img2.jpg" style="width:100%">
+  <div class="text">2</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 3</div>
+  <img src="img3.jpg" style="width:100%">
+  <div class="text">3</div>
+</div>
+
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+</div>
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+
+ <style>
+      body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0; /* Fundal stilizat */
+            padding: 20px; /* Spațiere între conținut și margini */
+        }
+
+        #content {
+            max-width: 1400px; /* Limitarea lățimii conținutului */
+  min-height: 400px;/* Limitarea lățimii conținutului */
+            margin: 5px auto; /* Marginile de 5px și centrat pe orizontală */
+            background-color: #fff; /* Fundalul conținutului */
+            padding: 20px; /* Spațierea între conținut și margini */
+            border-radius: 10px; /* Rotunjirea marginilor */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Umbra cutiei */
+            overflow: hidden; /* Pentru a evita ca imaginea să iasă în afara containerului */
+            position: relative; /* Pozitionare relativa pentru a permite pozitionarea imaginii mici pe imaginiea marita */
+        }
+
+        #content img {
+            float: right; /* Poziționarea imaginii la dreapta */
+            margin-left: 20px; /* Spațierea între imagine și text */
+            border-radius: 10px; /* Rotunjirea marginilor imaginii */
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.2); /* Umbra imaginii */
+            transition: transform 0.3s; /* Efect de tranziție pentru mărirea imaginii */
+            max-width: 100%; /* Limitare la lățimea conținutului */
+        }
+
+     #content img:hover {
+    transform: scale(1.1); /* Mărirea imaginii la 1.1x dimensiunea originală la hover */
+    position: relative; /* Schimbarea poziționării la relativă pentru a menține fluxul normal al elementelor */
+    z-index: 2; /* Asigură afișarea imaginii marite peste conținutul restant */
+}
+
+
+    </style>
+</div>
+
+<div class="navbar">
+  <a href="index.html" >ACASĂ</a>
+ <a href="c0.html" class="right">CONFIGURARE INIȚIALĂ ȘI SETĂRI DE BAZĂ</a>
+ <a href="c1.html" class="right">ACTUALIZĂRI ȘI SERVICE-URI</a>
+ <a href="c2.html" class="right">PERSONALIZARE ȘI UTILIZARE  </a>
+<a href="c3.html" class="right">GESTIONAREA DISPOZITIVELOR ȘI DRIVERELOR </a>
+
+</div>
+
+
+
+<div id="content">
+        <h3>Gestionarea dispozitivelor și driverelor se realizează urmând pașii:</h3>
+      
+      <ol>
+    <li>Identificarea driverelor necesare:
+        <p>Prin căutarea pe internet a informațiilor despre modelul de hardware și vizităm site-ul producătorului pentru a găsi driverele potrivite.</p>
+    </li>
+    <li>Descărcarea driverelor:
+        <p>Prin care descărcăm și ne asigurăm că alegem driverii potriviți pentru sistemul Windows 10.</p>
+    </li>
+    <li>Instalarea driverelor:
+        <p>Deschidem fișierele descărcate și urmăm instrucțiunile de instalare.</p>
+    </li>
+    <li>Actualizarea driverelor:
+        <p>Pe lângă instalarea inițială a driverelor, este important să le actualizăm periodic. Putem face acest lucru folosind utilitare de actualizare a driverelor sau prin intermediul Managerului de dispozitive din Windows.</p>
+    </li>
+    <li>Verificarea funcționării hardware-ului:
+        <p>După instalarea și actualizarea driverelor, verificăm funcționarea hardware-ului. Ne asigurăm că nu există erori în Managerul de dispozitive și că hardware-ul funcționează fără probleme în aplicațiile pe care le folosim.</p>
+    </li>
+</ol>
+
+ </div>
+
+<div id="content">
+        <h3>Configurarea perifericelor</h3>
+       
+     <img src="img1/20.jpg" alt="Figura 1: Adăugare limbă pentru Windows 10" width="30%">
+     <ol>
+     <li>Configurarea imprimantelor:</li>
+       
+             <p>Începem prin a conecta imprimanta la computer, fie prin cablu USB, fie prin rețeaua Wi-Fi. Apoi, din "Setări", secțiunea "Dispozitive" și alegem "Adăugare imprimantă" și urmăm instrucțiunile pentru a instala driverul și pentru a configura imprimanta.</p>
+
+<li>Configurarea camerelor web:
+        <ol>
+            <li>Conectăm camera web la computer folosind un port USB.</li>
+            <li>Dacă camera web vine cu software dedicat, instalăm și configurăm acel software.</li>
+            <li>Dacă nu, Windows 10 ar trebui să detecteze automat camera web și să o configureze. Putem verifica asta accesând "Setări" > "Confidențialitate" > "Camera" și asigurându-ne că permitem aplicațiilor să acceseze camera.</li>
+        </ol>
+    </li>
+    <li>Configurarea altor dispozitive periferice:
+        <p>Pentru alte dispozitive periferice, cum ar fi tastaturi, mouse-uri sau scanere, le conectăm la computer folosind porturile USB. De obicei, Windows 10 le detectează automat și instalează driverele necesare. Dacă nu, putem descărca și instala manual driverele de pe site-ul producătorului.</p>
+    </li>
+    <li>Gestionarea perifericelor:
+        <p>Pentru a gestiona perifericele deja instalate, deschidem "Dispozitive" sau "Dispozitive și Imprimante" din "Setări". Aici putem vedea lista cu toate dispozitivele conectate la computer și putem efectua diverse acțiuni, cum ar fi eliminarea sau actualizarea driverelor.</p>
+    </li>
+</ol>
+
+
+ </div>
+
+
+
+
+<div id="content">
+        <h3>Gestionarea spațiului de stocare</h3>
+       
+     <img src="img1/21.jpg" alt="Figura 1: Adăugare limbă pentru Windows 10" width="40%">
+   <ol>
+    <li>Accesăm Disk Management: 
+        <p>Făcând click dreapta pe butonul "Start" și selectăm "Gestionare computer". În fereastra "Gestionare computer", facem click pe "Gestionează" în secțiunea "Stocare" din panoul din stânga.</p>
+    <li>Vizualizăm și gestionăm discurile:
+        <p>În Disk Management, vedem o listă cu toate discurile și partițiile conectate la computer. Putem vedea informații precum dimensiunea, tipul și starea fiecărei partiții.</p>
+    </li>
+    <li>Creăm o nouă partiție:
+        <p>Dacă avem spațiu liber pe disc, putem crea o nouă partiție. Facem click dreapta pe spațiul nealocat disponibil și selectăm "Noua partiție" pentru a începe asistentul de creare a partițiilor. Urmează instrucțiunile asistentului pentru a specifica dimensiunea, litera de unitate și tipul de formatare al noii partiții.</p>
+    </li>
+    <li>Modificăm partițiile existente:
+        <p>Pentru a modifica o partiție existentă, facem click dreapta pe ea și selectăm una dintre opțiunile disponibile, cum ar fi "Extindere volum", "Împărțire volum" sau "Ștergere volum". Urmează instrucțiunile și avertizările asistentului care apare pentru a finaliza modificările dorite.</p>
+    </li>
+ <img src="img1/22.jpg" alt="Figura 1: Adăugare limbă pentru Windows 10" width="30%">
+    <li>Partajăm spațiul pe disc:
+        <p>Prin gestionarea partițiilor, putem partaja spațiul pe disc pentru diferite scopuri, cum ar fi stocarea datelor, instalarea sistemelor de operare duble sau crearea spațiilor de lucru dedicate.</p>
+    </li>
+</ol>
+
+
+
+ </div>
+
+
+
+
+<div class="footer">
+  
+ <div class="ft ft1">
+     
+      <p class="inf"><span class="bold">TEL/FAX: +40369420518</p>
+      <p class="inf"><span class="bold">Adresa:</span> Bulevardul General Vasile Milea 3-5, SIBIU</p>
+<p class="inf"><span class="bold">Email:</span> smcis@mapn.ro</p>
+     
+   </div>
+   
+
+<div class="ft ft3">
+    <p class="footertitle">Rețele sociale</p>
+    <ul class="footericons">
+        <li class="footericon">
+            <a target="_blank" href="https://www.facebook.com/windows/">
+                <div class="icon1"></div>
+            </a>
+        </li>
+        <li class="footericon">
+            <a target="_blank" href="https://www.office.com/">
+                <div class="icon2"></div>
+            </a>
+        </li>
+    </ul>
+</div>
+
+</body>
+</html>
